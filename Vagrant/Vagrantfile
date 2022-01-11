@@ -5,7 +5,7 @@ WORKER1      = "172.16.8.9"
 WORKER2      = "172.16.8.13"
 WORKER3      = "172.16.8.15"
 Vagrant.configure("2") do |config|
-  # The most common configuration options are documented and commented below.
+# The most common configuration options are documented and commented below.
 
   config.vm.box = "centos/8"
   boxes = [
