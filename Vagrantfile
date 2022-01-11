@@ -1,9 +1,9 @@
+#IP address of the worker nodes and master nodes should be added here
 MASTER1      = "172.16.8.4"
 MASTER2      = "172.16.8.6"
 WORKER1      = "172.16.8.9"
 WORKER2      = "172.16.8.13"
 WORKER3      = "172.16.8.15"
-# you're doing.
 Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
 
