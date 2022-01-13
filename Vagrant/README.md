@@ -8,3 +8,8 @@ Vagrant and any of the virtualization technlology must be installed
 ```
 vagrant up
 ```
+#### The installed boxes can be accessed by below command
+```
+vagrant status 
+vagrant ssh <node name>
+```
