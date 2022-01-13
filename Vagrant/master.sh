@@ -11,7 +11,7 @@ sudo mkdir /home/vagrant/.kube
 sudo cp /etc/kubernetes/admin.conf /home/vagrant/.kube/config
 sudo chown -R vagrant:vagrant /home/vagrant/.kube
 su - vagrant -c "kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml"
-kubeadm token create --print-join-command > /joincluster.sh
+sudo kubebeadm token create --print-join-command > /joincluster.sh
 }
 
 cluster_initial
