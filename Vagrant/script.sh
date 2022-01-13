@@ -39,7 +39,7 @@ nginx_install ()
 #sudo yum -y install epel-release
 sudo yum -y install nginx
 #Disable Selinux
-sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
+#sudo sed -i 's/SELINUX=enforcing/SELINUX=permissive/g' /etc/selinux/config
 #disable firewalld 
 sudo systemctl stop firewalld
 #Create directory for loadbalancing config
