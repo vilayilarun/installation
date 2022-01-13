@@ -10,7 +10,7 @@ sudo kubeadm init \
 sudo mkdir /home/vagrant/.kube
 sudo cp /etc/kubernetes/admin.conf /home/vagrant/.kube/config
 sudo chown -R vagrant:vagrant /home/vagrant/.kube
-su - vagrant -c "kubectl create -f https://docs.projectcalico.org/v3.9/manifests/calico.yaml"
+su - vagrant -c "kubectl create -f https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n'"
 sudo kubebeadm token create --print-join-command > /joincluster.sh
 }
 
